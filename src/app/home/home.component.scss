@@ -1,0 +1,31 @@
+
+.home-container{
+    background-image:url("https://images.pexels.com/photos/34676/pexels-photo.jpg");
+    background-size:cover;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    height:105vh;
+    margin-top:-70px;
+    
+ 
+}
+.home-container .name, .home-container .name h1{
+   color: #FEDE59;
+   font-size:100px;
+   text-align:right;
+   position:relative;
+   top:35%
+}
+
+.home-container .occupation{
+    background-color:#FEDE59;
+    position:relative;
+    top:35%
+}
+
+.home-container .occupation p{
+    text-align:right;
+    margin-left:0px;
+    font-size:33px;
+}
