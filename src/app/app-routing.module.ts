@@ -12,22 +12,22 @@ const routes: Routes = [
     path:'home',
     component: HomeComponent
   }
-//   {
-//     path:'about',
-//     component: AboutComponent
-//   },
-//   { 
-//     path:'portfolio',
-//     component: PortfolioComponent
-//   },
-//   {
-//     path:'contact',
-//     component: ContactComponent
-//   },
-//   {
-//     path:'resume',
-//     component: ResumeComponent
-//   }
+  // {
+  //   path:'about',
+  //   component: AboutComponent
+  // },
+  // { 
+  //   path:'portfolio',
+  //   component: PortfolioComponent
+  // },
+  // {
+  //   path:'contact',
+  //   component: ContactComponent
+  // },
+  // {
+  //   path:'resume',
+  //   component: ResumeComponent
+  // }
 ];
 
 @NgModule({

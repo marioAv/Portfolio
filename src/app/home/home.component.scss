@@ -1,3 +1,4 @@
+@import "../../assets/styles/shared-styles.scss";
 
 .home-container{
     background-image:url("https://images.pexels.com/photos/34676/pexels-photo.jpg");
@@ -15,11 +16,12 @@
    font-size:100px;
    text-align:right;
    position:relative;
-   top:35%
+   top:35%;
+   font-family:$primaryFont;
 }
 
 .home-container .occupation{
-    background-color:#FEDE59;
+    background-color:$secondaryColor;
     position:relative;
     top:35%
 }
@@ -28,4 +30,5 @@
     text-align:right;
     margin-left:0px;
     font-size:33px;
+    font-family:$secondaryFont;
 }

@@ -1,9 +1,10 @@
-<div id="nav-container" >
-  <button class="hamb" (click)="showSidebar()">XX</button>
-  <ng-container *ngIf="!showMenu">
+<button class="hamb" [@buttonAnimation]="position"  (click)="showSidebar()">{{message}}</button>
+
+<div id="nav-container" *ngIf="!showMenu" [@enterAnimation] >
+  <ng-container>
   <h1>Mario Aviles</h1>
   <hr>
-    <a routerLink="/home">{{showMenu}}</a>
+    <a routerLink="/home">Home</a>
     <hr>
     <a routerLink="/about"> About</a>
     <hr>
