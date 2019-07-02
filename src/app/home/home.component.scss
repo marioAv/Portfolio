@@ -11,8 +11,13 @@
     
  
 }
+.overlay{
+    background-color:rgba(0, 0, 0, 0.6);
+    width:100%;
+    height:105vh;
+}
 .home-container .name, .home-container .name h1{
-   color: #FEDE59;
+   color: $secondaryColor;
    font-size:100px;
    text-align:right;
    position:relative;
@@ -20,15 +25,24 @@
    font-family:$primaryFont;
 }
 
-.home-container .occupation{
+.home-container{
+
+    h1{
+        margin-right:80px;
+    }
+
+    .occupation{
     background-color:$secondaryColor;
     position:relative;
-    top:35%
-}
-
-.home-container .occupation p{
+    top:28%;
+    margin-right:70px;
+    }
+    p{
     text-align:right;
+    padding:20px;
     margin-left:0px;
     font-size:33px;
     font-family:$secondaryFont;
+    }
 }
+
