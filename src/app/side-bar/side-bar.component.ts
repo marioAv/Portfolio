@@ -23,7 +23,7 @@ import { trigger, style, animate, transition,state } from '@angular/animations';
       'buttonAnimation', [
         state('initial', 
           style({
-              left: '377px'
+              left: '340px'
           })
         ),
         state('final', 
@@ -42,13 +42,18 @@ import { trigger, style, animate, transition,state } from '@angular/animations';
 })
 export class SideBarComponent{
   showMenu:boolean=false;
-  message:string= "Close";
-  position:string="initial"
+  position:string="initial";
+  currentUrl:string= window.location.href;
   
   
   showSidebar(){
     this.showMenu = !this.showMenu;
-    this.message = "Open";
     this.position = this.position === 'initial' ? 'final' : 'initial';
+  }
+
+  checkCurrentUrl(page){
+    if(this.currentUrl.includes(page)){
+      console.log("we are in " + page);
+    }
   }
 }

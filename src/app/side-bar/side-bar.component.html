@@ -1,12 +1,20 @@
-<button class="hamb" [@buttonAnimation]="position"  (click)="showSidebar()">{{message}}</button>
+
+
+
+<div id="hamburger-menu" [@buttonAnimation]="position" (click)="showSidebar()">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
 
 <div id="nav-container" *ngIf="!showMenu" [@enterAnimation] >
   <ng-container>
   <h1>Mario Aviles</h1>
-    <a routerLink="/home">Home</a>
-    <a routerLink="/about"> About</a>
-    <a routerLink="/portfolio"> Portfolio</a>
-    <a routerLink="/resume"> Resume</a>
+    <a routerLink="/home" (click)="checkCurrentUrl('home')">Home</a>
+    <a routerLink="/about" (click)="checkCurrentUrl('about')"> About</a>
+    <a routerLink="/portfolio" (click)="checkCurrentUrl('portfolio')"> Portfolio</a>
+    <a routerLink="/resume" (click)="checkCurrentUrl('resume')"> Resume</a>
    <!-- <a routerLink="/technologies"> Technologies </a> -->
     <a routerLink="/contact"> Contact</a>
 
