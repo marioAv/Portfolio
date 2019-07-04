@@ -43,17 +43,12 @@ import { trigger, style, animate, transition,state } from '@angular/animations';
 export class SideBarComponent{
   showMenu:boolean=false;
   position:string="initial";
-  currentUrl:string= window.location.href;
+  isActive:boolean=true;
   
   
   showSidebar(){
     this.showMenu = !this.showMenu;
     this.position = this.position === 'initial' ? 'final' : 'initial';
   }
-
-  checkCurrentUrl(page){
-    if(this.currentUrl.includes(page)){
-      console.log("we are in " + page);
-    }
-  }
+  
 }

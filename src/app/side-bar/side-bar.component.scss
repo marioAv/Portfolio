@@ -104,8 +104,14 @@ hr{
     text-decoration:none;
     text-align:center;
     color:white;
-    
 }
+
+#nav-container a.active{
+        background-color:$secondaryColor;
+        color:$primaryColor;
+}
+
+
 #nav-container a:hover{
     background-color:$secondaryColor;
     color:black;

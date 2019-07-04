@@ -11,10 +11,10 @@
 <div id="nav-container" *ngIf="!showMenu" [@enterAnimation] >
   <ng-container>
   <h1>Mario Aviles</h1>
-    <a routerLink="/home" (click)="checkCurrentUrl('home')">Home</a>
-    <a routerLink="/about" (click)="checkCurrentUrl('about')"> About</a>
-    <a routerLink="/portfolio" (click)="checkCurrentUrl('portfolio')"> Portfolio</a>
-    <a routerLink="/resume" (click)="checkCurrentUrl('resume')"> Resume</a>
+    <a routerLink="/home"  routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active"> About</a>
+    <a routerLink="/portfolio" routerLinkActive="active"> Portfolio</a>
+    <a routerLink="/resume" routerLinkActive="active"> Resume</a>
    <!-- <a routerLink="/technologies"> Technologies </a> -->
     <a routerLink="/contact"> Contact</a>
 
