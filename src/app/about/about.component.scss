@@ -1,0 +1,51 @@
+@import "../../assets/styles/shared-styles.scss";
+
+.about-container{
+    background-image:url("https://images.pexels.com/photos/7369/startup-photos.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size:cover;
+    background-position: center; 
+    padding:0px;
+    margin:0px;
+    margin-top:-50px;
+    width:100%;
+    height:105vh;
+    
+    .overlay{
+        background-color:rgba(0, 0, 0, 0.90);
+        width:100%;
+        height:105vh;
+    }
+
+    .description{
+        color:$terciaryColor;
+        font-family:$primaryFont;
+        font-size:16px;
+        letter-spacing:1px;
+        line-height:1.6;
+        width:70%;
+        margin: 0;
+        position: relative;
+        left:30%;
+        top: 36%;
+    }
+}
+
+
+.title-container{
+    background-color:$secondaryColor;
+    width:70%;
+    margin: 0;
+    position: relative;
+    left:30%;
+    top: 38%;
+
+
+    p{
+        font-size:50px;
+        text-align:left;
+        font-family:$secondaryFont;
+        padding: 5px 20px;
+        text-transform: uppercase;
+        
+    }
+}
