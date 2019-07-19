@@ -51,6 +51,7 @@
 
 .info-wrapper{
     margin-bottom:90px;
+
 }
 
 .right-column{
@@ -72,6 +73,16 @@
         font-weight: 200;
         color:white;
         margin:5px 0px;
+    }
+
+    a{
+        margin-left:0px;
+        font-size:20px;
+        font-family:$secondaryFont;
+        font-weight: 200;
+        color:white;
+        margin:5px 0px;
+        text-decoration:none;  
     }
 
     .contact-information{

@@ -6,10 +6,12 @@
 
     h1{
         text-align: center;
-        font-family:$primaryFont;
+        font-family:$secondaryFont;
         background:$secondaryColor;
         padding-top:20px;
         padding-bottom:20px;
+        letter-spacing: 2px;
+        font-size:55px;
         margin-top:0px;
         text-transform: uppercase;
     }
