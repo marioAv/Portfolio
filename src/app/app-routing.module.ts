@@ -13,24 +13,29 @@ const routes: Routes = [
   {
     path:'home',
     component: HomeComponent,
-    data: {animation: 'HomePage'}
+    data: {animation: 'home'}
   },
   {
     path:'about',
     component: AboutComponent,
-    data: {animation: 'AboutPage'}
+    data: {animation: 'about'}
   },
   { 
     path:'portfolio',
-    component: PortfolioComponent
+    component: PortfolioComponent,
+    data: {animation: 'portfolio'}
   },
   {
     path:'contact',
-    component: ContactComponent
+    component: ContactComponent,
+    data: {animation: 'contact'}
   },
   {
     path:'resume',
-    component: ResumeComponent
+    component: ResumeComponent,
+    data: {animation: 'resume'}
+
+
   },
 
   {
@@ -44,3 +49,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+

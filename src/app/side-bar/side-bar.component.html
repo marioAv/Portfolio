@@ -1,14 +1,9 @@
 
 
 
-<div id="hamburger-menu" [@buttonAnimation]="position" (click)="showSidebar()">
-    <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-    </div>
 
-<div id="nav-container" *ngIf="!showMenu" [@enterAnimation] >
+
+<div id="nav-container" >
   <ng-container>
   <h1>Mario Aviles</h1>
     <a routerLink="/home"  routerLinkActive="active">Home</a>

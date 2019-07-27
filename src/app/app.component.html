@@ -1,10 +1,17 @@
-<app-side-bar></app-side-bar>
+<div id="hamburger-menu" [@buttonAnimation]="position" (click)="showSidebar()">
+  <input type="checkbox" />
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<app-side-bar class="side-bar-menu" [@sideBarAnimation]="position"></app-side-bar>
 
 <!-- <div [@slideOut]>
 <router-outlet></router-outlet>
 </div> -->
 
-<div [@routeAnimations]="prepareRoute(outlet)" >
+<div [@routeAnimations]="prepareRoute(outlet)" [@componentAnimation]="position" id="view-container" >
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
 

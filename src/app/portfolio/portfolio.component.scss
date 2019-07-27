@@ -1,8 +1,8 @@
 @import "../../assets/styles/shared-styles.scss";
 
 #portfolio-container{
-    background-color:black;
-    height:100vh;
+    background-color:$primaryColor;
+    height:150vh;
 
     h1{
         text-align: center;
@@ -65,7 +65,7 @@
                 margin-right:30px;
                 border-radius: 5px;
                 text-decoration:none;
-                color:black;
+                color:$primaryColor;
             }
         }
         .overlay:hover{
