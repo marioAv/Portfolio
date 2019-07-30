@@ -13,28 +13,31 @@
         text-align:center;
         padding:25px;
         margin:0px;
+        margin-bottom:50px;
         background-color:$secondaryColor;
     }
 }
 
-.left-side{
+.right-side{
     float:left;
     width:30%;
-    padding:15px 30px;
-    margin-left:10%;
-    margin-right:10%;
 
     h2{
         font-size:40px;
         font-family: $primaryFont;
         color:white; 
-        margin:10px; 
+        margin:10px 0px; 
+    }
+
+    .education-title{
+        margin-top:85px;
     }
     hr{
-        border-bottom:4px solid $secondaryColor;
+        border:3px solid $secondaryColor;
         width:150px;
         text-align:left;
         margin:0px;
+        margin-bottom:25px;
     }
 
     li{
@@ -43,7 +46,7 @@
     }
 
     .education-container{
-    margin-bottom:60px;
+    margin-bottom:40px;
 
     h3{
         color:$terciaryColor;
@@ -57,23 +60,25 @@
     }
 }
 
-.right-side{
+.left-side{
     float:left;
     width:35%;
-    padding:15px 30px;
+    margin-left:10%;
+    margin-right:8%;
 
     h2{
         font-size:40px;
         font-family: $primaryFont;
         color:white;
-        margin:10px;
+        margin:10px 0px;
     }
 
     hr{
-        border-bottom:4px solid $secondaryColor;
+        border:3px solid $secondaryColor;
         width:150px;
         text-align:left;
         margin:0px;
+        margin-bottom:25px;
     }
 }
 
@@ -84,16 +89,25 @@
     h3{
         color:$terciaryColor;
         font-family:$primaryFont;
+        margin:5px 0px;
     }
     hr{
-        border-bottom:4px solid $secondaryColor;
+        border:3px solid $secondaryColor;
         width:200px;
         text-align:left;
         margin:0px;
+        margin-bottom:25px;
     }
 
     li{
         color:white;
         font-family:$secondaryFont;
+    }
+    p{
+        color:white;
+        font-family: $primaryFont;
+        margin:0px;
+        font-style: italic;
+        color:$secondaryColor;
     }
 }

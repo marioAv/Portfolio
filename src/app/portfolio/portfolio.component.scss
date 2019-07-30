@@ -16,40 +16,34 @@
         text-transform: uppercase;
     }
 
-    // i{
-    //     background-color:$secondaryColor;
-    //     padding:20px;
-    //     position: relative;
-    //     top:-45px;
-    //     left:160px;
-    // }
     .projects-wrapper{
         width:90%;
         margin:auto;
+        
     }
 }
 .project-container{
     background-image: url("https://www.playawebdesign.com/images/portfolio/gabium-brewery-diseno-logotipo.jpg");
     background-size:cover;
+    background-position: center;
     float: left;
-    width:400px;
+    width:30%;
     height:300px;
     margin-left:3%;
     margin-top:8%;
+    border-radius:6px;
 
         .overlay{
-            background-color:rgba(0, 0, 0, 0.6);
-            width:400px;
+            background-color:rgba(0, 0, 0, 0.7);
+            width:100%;
             height:320px;
             margin-top:-20px;
             opacity:0;
             transition: opacity .8s;
 
             .buttons{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                padding-top:50%;
+                margin-left:20%;
             }
 
             

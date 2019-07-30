@@ -1,6 +1,8 @@
 @import "../../assets/styles/shared-styles.scss";
 
-#nav-container{
+#nav-container{ 
+    height:150vh;
+    
 
   
     a{
@@ -45,9 +47,10 @@
 
 .copyright-container{
     background-color:#0F0F0F;
+    font-family: $primaryFont;
     padding:20px;
     color:#D7D7D7;
     text-align: center;
-    height:10%;
+    height:20px;
     margin-top:5%;
 }
