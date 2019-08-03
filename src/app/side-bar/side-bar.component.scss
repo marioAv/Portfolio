@@ -3,7 +3,11 @@
 #nav-container{ 
     height:150vh;
     
-
+    img{
+        display: block;
+        width: 200px;
+        margin:40px auto;
+    }
   
     a{
     font-family: $secondaryFont;
@@ -21,6 +25,7 @@
         text-decoration:none;
         text-align:center;
         color:white;
+        margin:0px 50px;
     }
   }
 
@@ -39,10 +44,8 @@
     transition: width .3s;
 }
 
-
 #nav-container a.active{
         border-bottom:3px solid $secondaryColor;
-        margin:0px 30px;
 }
 
 .copyright-container{
@@ -52,5 +55,5 @@
     color:#D7D7D7;
     text-align: center;
     height:20px;
-    margin-top:5%;
+    margin-top:40px;
 }
