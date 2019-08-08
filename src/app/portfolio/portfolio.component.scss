@@ -23,9 +23,10 @@
     }
 }
 .project-container{
-    background-image: url("https://www.playawebdesign.com/images/portfolio/gabium-brewery-diseno-logotipo.jpg");
+    background-color:white;
     -webkit-filter: grayscale(100%);
-    background-size:cover;
+    background-repeat:no-repeat;
+    background-size:contain;
     background-position: center;
     float: left;
     width:30%;
@@ -66,4 +67,34 @@
         .overlay:hover{
             opacity: 1;
         }
+}
+
+
+@media only screen and (max-width:800px){
+   
+    .project-container{
+    background-image: url("https://www.playawebdesign.com/images/portfolio/gabium-brewery-diseno-logotipo.jpg");
+    -webkit-filter: grayscale(100%);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center;
+    float: left;
+    width:94%;
+    height:300px;
+    margin-left:3%;
+    margin-top:8%;
+    border-radius:6px;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+   
+#portfolio-container{
+
+    h1{
+        font-size:40px;
+    }
+}
+
 }

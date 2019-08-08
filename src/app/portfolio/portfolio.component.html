@@ -3,35 +3,16 @@
 
   <div class="projects-wrapper">
 
-      <div class="project-container">
+      <div class="project-container" *ngFor="let project of projects" [style.backgroundImage]="'url('+ project.image +')'">
         <div class="overlay">
             <i class="fa fa-gavel fa-2x"></i>
             <div class="buttons">
-                <a href="#"> VIEW SITE </a>
-                <a href="#"> VIEW CODE</a>
+                <a href={{project.url}} target="_blank"> VIEW SITE </a>
+                <a *ngIf="project.github" target="_blank" href="{{project.githubLink}}"> VIEW CODE</a>
+                <a *ngIf="project.wordpress" target="_blank" href="#">Worpress Site</a>
             </div>
         </div>
       </div>
-
-    <div class="project-container">
-      <div class="overlay">
-          <i class="fa fa-gavel fa-2x"></i>
-          <div class="buttons">
-            <a href="#"> VIEW SITE </a>
-            <a href="#"> VIEW CODE</a>
-          </div>
-      </div>
-    </div>
-
-    <div class="project-container">
-      <div class="overlay">
-          <i class="fa fa-gavel fa-2x"></i>
-          <div class="buttons">
-              <a href="#"> VIEW SITE </a>
-              <a href="#"> VIEW CODE</a>
-          </div>
-      </div>
-    </div>
 
   </div>
 </div>

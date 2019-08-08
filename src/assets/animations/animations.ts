@@ -20,6 +20,23 @@ export const Animations = {
         ]
       ),
 
+      sideBarMobileAnimation:trigger(
+        'sideBarMobileAnimation', [
+          state('initial', 
+            style({
+                transform: 'translate(-330px)',
+            })
+          ),
+          state('final', 
+            style({
+                transform: 'translate( 0px)',
+              }),
+          ),
+          transition('initial=>final', animate('400ms cubic-bezier(0.25, 0.46, 0.45, 0.94)')),
+          transition('final=>initial', animate('400ms cubic-bezier(0.25, 0.46, 0.45, 0.94)'))
+        ]
+      ),
+
       buttonAnimation:trigger(
         'buttonAnimation', [
           state('initial', 
@@ -37,6 +54,23 @@ export const Animations = {
         ]
       ),
 
+      buttonMobileAnimation:trigger(
+        'buttonMobileAnimation', [
+          state('initial', 
+            style({
+                left: '0px'
+            })
+          ),
+          state('final', 
+            style({
+                left: '330px'
+              }),
+          ),
+          transition('initial=>final', animate('400ms cubic-bezier(0.25, 0.46, 0.45, 0.94)')),
+          transition('final=>initial', animate('400ms cubic-bezier(0.25, 0.46, 0.45, 0.94)'))
+        ]
+      ),
+
       componentAnimation:trigger(
             'componentAnimation', [
               state('initial', 
@@ -47,6 +81,23 @@ export const Animations = {
               state('final', 
                 style({
                     marginLeft: '0px'
+                  }),
+              ),
+              transition('initial=>final', animate('400ms cubic-bezier(0.25, 0.46, 0.45, 0.94)')),
+              transition('final=>initial', animate('400ms cubic-bezier(0.25, 0.46, 0.45, 0.94)'))
+            ]
+          ),
+
+        componentMobileAnimation:trigger(
+            'componentMobileAnimation', [
+              state('initial', 
+                style({
+                    marginLeft: '0px'
+                })
+              ),
+              state('final', 
+                style({
+                    marginLeft: '300px'
                   }),
               ),
               transition('initial=>final', animate('400ms cubic-bezier(0.25, 0.46, 0.45, 0.94)')),

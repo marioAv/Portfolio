@@ -1,19 +1,43 @@
+<div id="hamburger-menu" *ngIf="animationLogic.isDesktop" [@buttonAnimation]="animationLogic.position" (click)="showSidebar()">
+  <input type="checkbox" />
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 
+<div id="hamburger-menu"  *ngIf="!animationLogic.isDesktop" [@buttonMobileAnimation]="animationLogic.position" (click)="showSidebar()">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
+<div class="side-bar-menu" *ngIf="animationLogic.isDesktop" [@sideBarAnimation]="animationLogic.position">
+    <ng-container>
+        <img src="../../assets/images/MA-Logo.png">
+        <a routerLink="/home"  routerLinkActive="active">Home</a>
+        <a routerLink="/about" routerLinkActive="active"> About</a>
+        <a routerLink="/portfolio" routerLinkActive="active"> Portfolio</a>
+        <a routerLink="/resume" routerLinkActive="active"> Resume</a>
+        <a routerLink="/contact" routerLinkActive="active"> Contact</a>
 
+        <div class="copyright-container">
+            <i class="fa fa-copyright"></i> All rights Reserved 2018 &copy;
+        </div>
+    </ng-container>
+</div>
 
+<div class="side-bar-menu" *ngIf="!animationLogic.isDesktop" [@sideBarMobileAnimation]="animationLogic.position">
+    <ng-container>
+        <img src="../../assets/images/MA-Logo.png">
+        <a routerLink="/home"  routerLinkActive="active" (click)="showSidebar()">Home</a>
+        <a routerLink="/about" routerLinkActive="active" (click)="showSidebar()"> About</a>
+        <a routerLink="/portfolio" routerLinkActive="active" (click)="showSidebar()"> Portfolio</a>
+        <a routerLink="/resume" routerLinkActive="active" (click)="showSidebar()"> Resume</a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="showSidebar()"> Contact</a>
 
-<div id="nav-container" >
-  <ng-container>
-  <img src="../../assets/images/MA-Logo.png">
-    <a routerLink="/home"  routerLinkActive="active">Home</a>
-    <a routerLink="/about" routerLinkActive="active"> About</a>
-    <a routerLink="/portfolio" routerLinkActive="active"> Portfolio</a>
-    <a routerLink="/resume" routerLinkActive="active"> Resume</a>
-    <a routerLink="/contact" routerLinkActive="active"> Contact</a>
-
-<div class="copyright-container">
-   <i class="fa fa-copyright"></i> All rights Reserved 2018 &copy;
- </div>
-</ng-container>
+        <div class="copyright-container">
+            <i class="fa fa-copyright"></i> All rights Reserved 2018 &copy;
+        </div>
+    </ng-container>
 </div>
