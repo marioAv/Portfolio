@@ -10,7 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
-import {AnimationsLogicService} from './Services/animations-logic.service'
+import {AnimationsLogicService} from '../Services/animations-logic.service'
 
 @NgModule({
   declarations: [

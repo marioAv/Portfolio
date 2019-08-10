@@ -1,18 +1,11 @@
 <div id="portfolio-container">
-  <h1 > My Projects </h1>
+  <h1 > Projects </h1>
 
-  <div class="projects-wrapper">
-
-      <div class="project-container" *ngFor="let project of projects" [style.backgroundImage]="'url('+ project.image +')'">
-        <div class="overlay">
-            <i class="fa fa-gavel fa-2x"></i>
-            <div class="buttons">
-                <a href={{project.url}} target="_blank"> VIEW SITE </a>
-                <a *ngIf="project.github" target="_blank" href="{{project.githubLink}}"> VIEW CODE</a>
-                <a *ngIf="project.wordpress" target="_blank" href="#">Worpress Site</a>
-            </div>
-        </div>
-      </div>
-
+<div class="container">
+  <div class="projects-wrapper" *ngFor="let project of projects">
+      <div class="project-container" [style.backgroundImage]="'url('+ project.image +')'"> </div>
+      <a href={{project.url}} target="_blank"> VIEW SITE </a>
   </div>
+</div>
+
 </div>

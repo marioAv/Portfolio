@@ -28,6 +28,12 @@
         left:30%;
         top: 36%;
     }
+    .facts-list li {
+        color:$terciaryColor;
+        list-style-type: square;
+    }
+
+
 }
 
 
@@ -47,5 +53,22 @@
         padding: 5px 20px;
         text-transform: uppercase;
         
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .title-container{
+        top:18%;
+        width:85%;
+        left:15%;
+    }
+
+    .about-container{
+
+        .description{
+            top:15%;
+            width:85%;
+            left:15%;
+        }
     }
 }
