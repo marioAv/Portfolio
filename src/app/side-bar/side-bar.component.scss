@@ -162,11 +162,8 @@ hr{
     }
 }
 
-// @media only screen and (max-width:400px){
-//     .side-bar-menu{
-//         width:240px;
-//     }
-//     // #hamburguer-menu{
-//     //     left: 270px;
-//     // }
-// }
+@media only screen and (max-width:900px){
+    .side-bar-menu{
+        width:265px;
+    }
+}

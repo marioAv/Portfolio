@@ -63,11 +63,11 @@ export const Animations = {
           ),
           state('final', 
             style({
-                left: '330px'
+                left: '295px'
               }),
           ),
           transition('initial=>final', animate('400ms cubic-bezier(0.25, 0.46, 0.45, 0.94)')),
-          transition('final=>initial', animate('400ms cubic-bezier(0.25, 0.46, 0.45, 0.94)'))
+          transition('final=>initial', animate('300ms cubic-bezier(0.25, 0.46, 0.45, 0.94)'))
         ]
       ),
 

@@ -14,7 +14,7 @@ import {AnimationsLogicService} from '../../Services/animations-logic.service'
   ]
 })
 export class SideBarComponent{
-  constructor(private animationLogic:AnimationsLogicService ){
+  constructor(public animationLogic:AnimationsLogicService ){
 
   }
 

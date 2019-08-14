@@ -112,30 +112,27 @@
     }
 }
 
-@media only screen and (max-width:900px){
 
-.left-side{
-    width:100%;
-}
-
-.right-side{
-    width:100%;
-    margin-left:10%;
-}
-
-}
 
 @media only screen and (max-width:900px){
 
-    .left-side{
-        width:90%;
-        margin-left:5%;
+    .resume-wrapper{
+        position: absolute;
+        height:auto;
+
+
+        .left-side{
+            width:90%;
+            margin-left:5%;
+        }
+        
+        .right-side{
+            width:90%;
+            margin-left:5%;
+        }
+
     }
-    
-    .right-side{
-        width:90%;
-        margin-left:5%;
-    }
+
     
 }
 
