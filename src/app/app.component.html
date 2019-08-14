@@ -2,10 +2,10 @@
 <app-side-bar></app-side-bar>
 
 <div *ngIf="animationLogic.isDesktop" [@routeAnimations]="prepareRoute(outlet)" [@componentAnimation]="animationLogic.position" id="view-container" >
-    <router-outlet #outlet="outlet"></router-outlet>
+    <router-outlet #outlet="outlet" ></router-outlet>
 </div>
 
 <div *ngIf="!animationLogic.isDesktop" [@routeAnimations]="prepareRoute(outlet)"  id="view-container" >
-    <router-outlet #outlet="outlet"></router-outlet>
+        <router-outlet #outlet="outlet"></router-outlet>
 </div>
 
